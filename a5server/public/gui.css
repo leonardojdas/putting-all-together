@@ -1,0 +1,48 @@
+.selected{
+    background-color: rgb(255, 255, 92);
+}
+
+.tr-item:hover{
+    cursor: pointer;
+    background-color: rgb(83, 241, 202);
+    /* background-color: rgb(28, 197, 156); */
+}
+
+.hidden{
+    display: none;
+}
+
+.no-padding{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+#container-buttons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#container-buttons > div:nth-child(2){
+    width: 100px;
+    text-align: center;
+}
+
+.form-floating>label{
+    left: 10px;
+}
+
+.row > *{
+    padding-right: 0px;
+}
+
+.no-input{
+    border: 1px solid rgb(209, 209, 209);
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+#items{
+    padding-top: 30px;
+}

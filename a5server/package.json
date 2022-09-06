@@ -1,0 +1,26 @@
+{
+  "name": "a4_solution",
+  "version": "1.0.0",
+  "description": "solution to Assignment 4 in Advanced JavaScript",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "devStart": "nodemon app.js"
+  },
+  "author": "S. Monk",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mocha": "^10.0.0",
+    "mongodb": "^4.6.0",
+    "node-fetch": "^3.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

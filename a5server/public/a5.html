@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>A5 - Putting all together</title>
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="gui.css" />
+    <script src="gui.js"></script>
+
+    <body>
+        <div class="text-center py-3">
+            <h1>Restaurant Menu</h1>
+        </div>
+
+        <div class="container border rounded-1 no-padding">
+            <div id="container-buttons" class="container-fluid bg-dark bg-opacity-10 d-flex justify-content-center">
+                <div><input type="button" id="addButton" value="Add" class="btn btn-outline-primary"></div>
+                <div><input type="button" id="updateButton" value="Update" class="btn btn-outline-primary" disabled></div>
+                <div><input type="button" id="deleteButton" value="Delete" class="btn btn-outline-danger" disabled></div>
+            </div>
+
+            <div id="methodsPanel" class="container hidden row">
+                <div class="col-12 text-center py-3 fw-bolder">
+                    Method: <span id="methodTitle"></span>
+                </div>
+
+                <div class="form-floating mb-3 col-6">
+                    <input type="number" id="itemId" class="form-control" placeholder="ID" min="100" max="999">
+                    <label for="floatingInput">ID</label>
+                </div>
+    
+                <div class="form-floating mb-3 col-6">
+                    <select class="form-select" id="itemCategory" aria-label="">
+                        <option selected></option>
+                        <option id="categoryAPP" value="APP">APP (Appetizer)</option>
+                        <option id="categoryENT" value="ENT">ENT (Entree)</option>
+                        <option id="categoryDES" value="DES">DES (Desert)</option>
+                    </select>
+                    <label for="floatingSelect">Category</label>
+                </div>
+    
+                <div class="form-floating mb-3 col-12">
+                    <input type="text" id="itemDescription" class="form-control" placeholder="Description">
+                    <label for="floatingInput">Description</label>
+                </div>
+    
+                <div class="form-floating mb col-6">
+                    <input type="number" id="itemPrice" class="form-control" placeholder="Price" min="0" max="">
+                    <label for="floatingInput">Price</label>
+                </div>
+    
+                <div class="form-floating mb col-6">
+                    <div class="no-input">
+                        <div class="col-6">Vegetarian</div>
+                        <div class="form-switch col-6">
+                            <input class="form-check-input" type="checkbox" role="switch" id="itemVegetarian" value="true">
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="container-buttons" class="container-fluid bg-opacity-10 d-flex justify-content-center">
+                    <button type="button" id="submitButton" class="btn btn-outline-dark" disabled>Confirm action</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="items" class="container"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </body>
+</html>
